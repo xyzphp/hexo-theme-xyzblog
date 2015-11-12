@@ -1,0 +1,14 @@
+<!-- 分类 -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-fw fa-thumb-tack"></i> 分类</h3>
+    </div>
+    <div class="list-group">
+        <% 
+        site.categories.sort('length',-1).each(function(cat){%>
+            <a href="<%= url_for(cat.path) %>" class="list-group-item"> <%= cat.name %>
+                <span class="badge badge-info" style="background-color:#e9573f"><%= cat.length %></span>
+            </a>   
+        <%}) %>
+    </div>
+</div>

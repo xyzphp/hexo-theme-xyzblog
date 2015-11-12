@@ -1,0 +1,17 @@
+<!-- 最新文章 -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-fw fa-angellist"></i>文章归档</h3>
+    </div>
+    <div class="list-group">
+        <%- list_archives({
+            format:"YYYY年MM月",
+            separator: '',
+            class: 'list-group-item',
+            style: 'none',
+            CountClass: 'badge badge-info',
+            warp : '<i class="fa fa-fw fa-calendar"></i> '
+        }) %>
+
+    </div>
+</div>

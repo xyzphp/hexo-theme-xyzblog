@@ -1,0 +1,20 @@
+<!-- 标签云 -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-fw fa-tags"></i> 标签云</h3>
+    </div>
+    <div id="tag_cloud_widget">
+    <% 
+        len= Math.ceil((1/site.tags.length)*50)
+            for(var a=0; a<4; a++){
+                site.tags.sort('length',-1).each(function(cat){
+                    i = Math.floor(Math.random()*10);
+    %>
+                <a href="<%= url_for(cat.path) %>" class="label-<%- theme.colour[i] %>" > <%= cat.name %></a>   
+    <%
+            })
+        }
+     %>
+    </div>
+</div>
+<%- js(['js/3dtags.js']) %> 

@@ -1,0 +1,60 @@
+<%- css('css/markdown.css')%>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+
+			<div class="article-head">
+
+				<%if(page.photos[0]){%>
+					<div class="article-img">
+	                      <a href="<%= url_for(page.path) %>">
+	                          <img class="img-thumbnail" width="100" src="<%- page.photos[0] %>"/>
+	                      </a>
+					</div>
+                <% } %>
+
+				<h3><i class="fa fa-book"></i> <%- page.title%></h3>
+				<small style="color:#aaa">
+                  <%if(page.desc){%>
+                      <%= page.desc %>
+                  <%  } else{ %>
+                      <%= page.title%>
+                  <% } %>
+                </small>
+                <div class="article-date">
+                	<span class="fa fa-calendar"></span> &nbsp;<%= date(page.date, 'YYYY/M/D') %>
+                </div>
+                <div class="article-tag">
+					<% page.tags.each(function(tag){
+						var i = Math.floor(Math.random()*10);
+	                %>
+						<a href="/tags/<%= tag.name %>" class="label label-<%- theme.colour[i] %>"><%= tag.name %></a>
+					<%})%>
+				</div>
+			</div>
+			<div class="article-entry">
+			 <%- page.content%>
+			</div>
+			<ul class="pager">
+                    <% if(page.prev){%>
+                        <li class="previous"><a href="<%- url_for(page.prev.path) %>">← <%-page.prev.title%></a></li>
+                    <%} else{%>
+                        <li class="previous disabled"><a href="javascript:;">← 上一篇</a></li>
+                    <%} %>
+
+                    <% if(page.next){%>
+                        <li class="next"><a href="<%- url_for(page.next.path) %>"><%-page.next.title%> →</a></li>
+                    <%} else{%>
+                        <li class="next disabled"><a href="javascript:;">下一篇 →</a></li>
+                    <%} %>
+                    
+            </ul>
+
+     		<%- partial('_widget/duoshuo') %>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+<%- partial('_widget/toTop') %>
+<%- partial('_widget/dm') %>

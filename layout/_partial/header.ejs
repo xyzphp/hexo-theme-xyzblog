@@ -1,0 +1,42 @@
+<%
+	var bg='';
+	if(is_home()){
+		bg = 'bg_1.jpg'
+	}
+
+	if(is_post()){
+		bg = 'bg_8.jpg'
+	}
+
+	if(is_archive()){
+		bg = 'bg_3.jpg'
+	}
+
+	if(is_category()){
+		bg = 'bg_5.jpg'
+	}
+
+	if(is_tag()){
+		bg = 'bg_6.jpg'
+	}
+
+	if(is_page()){
+		bg = 'bg_7.jpg'
+	}
+%>
+<div class="page-header" id="banner" style="background:url(/images/<%- bg %>)">
+	<div class="text-center">
+		<div id="header-img">
+
+			<div id="box">
+				<div id="left_eye"></div>
+				<div id="right_eye"></div>
+			</div>
+		</div>
+		<div class="lead"><%= config.author %>&nbsp;&nbsp;
+		<i class="fa fa-<%- theme.sex %> "></i>
+		</div>
+		<q><%= theme.signature %></q>
+	</div>
+</div>
+<%- js('js/public.js')%>

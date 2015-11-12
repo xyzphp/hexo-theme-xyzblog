@@ -1,0 +1,92 @@
+# Header
+
+site_name: xyzblog
+
+# 菜单数据
+menu:
+	首页: /
+	Github: https://github.com/xyzphp
+	微博: http://weibo.com/u/2182056457
+	关于: /about
+
+# mars-stroke :女   mars :男
+sex: mars         #男
+
+#签名
+signature: 编程，我所欲也，魔方，亦我所欲也，二者不可得兼，舍产品经理而去睡觉也。
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Colour  颜色标签
+colour:
+- default
+- pink
+- dark
+- purple
+- success
+- info
+- warning
+- primary
+- danger
+- mint
+
+#Links
+Links:
+	百度: http://baidu.com
+	慕课网: http://www.imooc.com/
+	laravel学院: http://laravelacademy.org/
+	packagist: https://packagist.org/
+	微信公众平台: https://mp.weixin.qq.com/
+	廖雪峰git教程: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+	兄弟连云课堂: http://www.ydma.cn/
+	中国魔方俱乐部: http://bbs.mf8-china.com/
+	联想服务: http://weixin.lenovo.com.cn/
+	少数派: http://sspai.com/
+	阿里云服务器: http://www.aliyun.com/
+	Hexo: htpp://hexo.io
+
+# 联系方式
+marker: 北京市 海淀区
+phone: 15510255074
+qq: 501773740
+email: 501773740@qq.com
+github: 
+	url: https://github.com/xyzphp
+	name: xyzphp
+weibo:
+	url: http://weibo.com/u/2182056457
+	name: 魔力六色
+
+# 版权
+copy: 
+	content: © 2015 blog.xyzphp.com 晋ICP备15007176号 Node.js 强力驱动
+	url: http://www.miitbeian.gov.cn/
+
+# 微信号
+weixin:
+	qrcode: /images/myqrcode.png
+
+# 公众平台号
+weichat:
+	qrcode: /images/qrcode.jpg
+
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+

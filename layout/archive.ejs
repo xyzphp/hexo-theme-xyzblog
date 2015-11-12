@@ -1,0 +1,31 @@
+<%
+  var listdata={title:'',link_root:''};
+  if(page.month){
+    listdata.title='<i class="fa fa-fw fa-calendar"></i>'+page.year+'年 '+page.month+'月';
+  }else{  
+    listdata.title='<i class="fa fa-fw fa-calendar"></i>'+page.year+'年 ';
+  }
+
+  if(page.archive && page.year){
+
+    listdata.link_root = '/'+config.archive_dir+'/'+page.year+'/';
+  }
+
+ if (page.archive && page.year && page.month){
+
+    listdata.link_root = '/'+config.archive_dir+'/'+page.year+'/'+page.month+'/';
+
+  }
+
+%>
+
+
+<!-- 调用list模板 -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+      <%- partial('_widget/list',listdata) %>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="rows">
+        <%
+            var listdata={};
+            listdata.link_root='/';
+            listdata.title='';
+        %>
+		<%- partial('_widget/list',listdata) %>
+        <div class="col-lg-4">
+            <%- partial('_widget/archives') %>
+            <%- partial('_widget/categories') %>
+            <%- partial('_widget/3dtags') %>
+        </div>
+	</div>
+</div>
+<%- partial('_widget/dm') %>

@@ -1,0 +1,46 @@
+<%
+	var title ='';
+	var description='';
+	if(is_home()){
+		title = config.title;
+		description = config.description;
+	}
+
+	if(is_post()){
+		title = page.title;
+		if(page.desc){
+			description = page.desc;
+		}else{
+			description = config.description;
+		}
+	}
+
+	if(is_archive()){
+		if(page.month){
+			title = '【'+page.year+'年'+page.month+'月】的博文';
+		}else{
+			title = '【'+page.year+'年】的博文';
+		}
+		description = config.description;
+	}
+
+	if(is_category()){
+		title = page.category;
+		description = config.description;
+	}
+
+	if(is_tag()){
+		title = page.tag;
+		description = config.description;
+	}
+
+	if(is_page()){
+		title = page.title;
+		description = config.description;
+	}
+%>
+<meta charset="UTF-8">
+<title><%= title %></title>
+<meta name="description" content="<%- description%>">
+<meta name="keywords" content="<%- config.keywords%>">
+<% if (theme.favicon){ %><link rel="icon" href="<%- theme.favicon %>"><% } %>

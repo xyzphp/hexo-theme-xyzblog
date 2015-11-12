@@ -1,0 +1,19 @@
+<%
+	var listdata={};
+
+    if(page.tag){
+    	listdata.link_root='/'+config.tag_dir+'/'+page.tag+'/'
+    }else{
+    	listdata.link_root='/'
+    }
+
+    listdata.title='<i class="fa fa-fw fa-tags"></i> '+page.tag;
+%>
+<!-- 调用list模板 -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+      <%- partial('_widget/list',listdata) %>
+    <div class="col-lg-2"></div>
+  </div>
+</div>

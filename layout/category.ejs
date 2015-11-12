@@ -1,0 +1,20 @@
+<%
+	var listdata={};
+
+    if(page.category){
+    	listdata.link_root='/'+config.category_dir+'/'+page.category+'/'
+    }else{
+    	listdata.link_root='/'
+    }
+
+    listdata.title='<i class="fa fa-fw fa-thumb-tack"></i> '+page.category;
+%>
+
+<!-- 调用list模板 -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+      <%- partial('_widget/list',listdata) %>
+    <div class="col-lg-2"></div>
+  </div>
+</div>

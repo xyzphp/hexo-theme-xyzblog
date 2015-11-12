@@ -1,0 +1,392 @@
+.article-head {
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 5px 5px 0 0;
+	padding-left: 40px;
+	background-color: #f6f6f6;
+}
+.article-head small {
+	display: block;
+}
+.article-footer {
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 0 0 5px 5px;
+	margin-bottom: 20px
+}
+.article-tag {
+	padding-bottom: 10px;
+	margin-top: 10px
+}
+.article-date {
+	margin-top: 5px;
+	display: block
+}
+.article-img {
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px
+}
+.article-entry {
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+.article-entry tr th {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	text-align: left;
+	font-weight: 700;
+	padding: 10px
+}
+.article-entry tr td {
+	border: 1px solid #ddd;
+	padding: 10px
+}
+.article-entry table {
+	line-height: 1.5em
+}
+.article-entry table tr:hover {
+	background-color: #ddd
+}
+.article-entry h1 a, .article-entry h2 a, .article-entry h3 a, .article-entry h4 a, .article-entry h5 a, .article-entry h6 a {
+	color: #000;
+	text-decoration: none
+}
+.article-entry h1 a:hover, .article-entry h2 a:hover, .article-entry h3 a:hover, .article-entry h4 a:hover, .article-entry h5 a:hover, .article-entry h6 a:hover {
+	color: #e32d40
+}
+.article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6 {
+	margin-bottom: 10px
+}
+.article-entry h1 {
+	font-size: 2em
+}
+.article-entry h2 {
+	font-size: 1.5em
+}
+.article-entry h3 {
+	font-size: 1.3em
+}
+.article-entry h4 {
+	font-size: 1.2em
+}
+.article-entry h5 {
+	font-size: 1em
+}
+.article-entry h6 {
+	font-size: 1em;
+	color: #999
+}
+.article-entry hr {
+	border: 1px dashed #ddd
+}
+.article-entry strong {
+	font-weight: bold
+}
+.article-entry em, .article-entry cite {
+	font-style: italic
+}
+.article-entry sup, .article-entry sub {
+	font-size: 0.75em;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+.article-entry sup {
+	top: -0.5em
+}
+.article-entry sub {
+	bottom: -0.2em
+}
+.article-entry small {
+	font-size: 0.85em
+}
+.article-entry acronym, .article-entry abbr {
+	border-bottom: 1px dotted
+}
+.article-entry ul, .article-entry ol, .article-entry dl {
+	margin: 0 20px;
+	line-height: 1.6em
+}
+.article-entry ul ul, .article-entry ol ul, .article-entry ul ol, .article-entry ol ol {
+	margin-top: 0;
+	margin-bottom: 0
+}
+.article-entry ul {
+	list-style: disc
+}
+.article-entry ol {
+	list-style: decimal
+}
+.article-entry dt {
+	font-weight: bold
+}
+.article-entry {
+	zoom: 1;
+	color: #000;
+	padding: 0 20px
+}
+.article-entry:before, .article-entry:after {
+	content: "";
+	display: table
+}
+.article-entry:after {
+	clear: both
+}
+.article-entry p, .article-entry table {
+	line-height: 1.6em;
+	margin: 1.6em 0;
+	text-indent: 2em;
+}
+.article-entry li p{
+	line-height: 1.6em;
+	margin: 1.6em 0;
+	text-indent: 0em;
+}
+.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6 {
+	line-height: 1.1em;
+	margin: 1.1em 0
+}
+.article-entry a {
+	text-decoration: none
+}
+.article-entry a:hover {
+	text-decoration: underline
+}
+.article-entry ul, .article-entry ol, .article-entry dl {
+	margin-top: 1.6em;
+	margin-bottom: 1.6em
+}
+.article-entry img,.article-entry video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto
+}
+.article-entry img[alt=right]{
+	display: block;
+	width:25%;
+	float: right;
+	margin: 20px
+}
+.article-entry img[alt=left]{
+	display: block;
+	width:20%;
+	float: left;
+	margin: 40px;
+}
+
+.article-entry iframe {
+	border: none
+}
+.article-entry table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0
+}
+.article-entry th {
+	font-weight: bold;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 0.5em
+}
+.article-entry td {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0
+}
+.article-entry blockquote {
+	margin: 1.6em 0;
+	padding: 0 0.8em;
+	border-left: 4px solid #ddd;
+	color: #777
+}
+.article-entry blockquote footer {
+	font-size: 14px;
+	margin: 1.6em 0
+}
+.article-entry blockquote footer cite:before {
+	content: "—";
+	padding: 0 0.5em
+}
+.article-entry .pullquote {
+	text-align: left;
+	width: 45%;
+	margin: 0
+}
+.article-entry .pullquote.left {
+	margin-left: 0.5em;
+	margin-right: 1em
+}
+.article-entry .pullquote.right {
+	margin-right: 0.5em;
+	margin-left: 1em
+}
+.article-entry .caption {
+	color: #999;
+	display: block;
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	position: relative;
+	text-align: center
+}
+.article-entry .video-container {
+	position: relative;
+	padding-top: 56.25%;
+	height: 0;
+	overflow: hidden
+}
+.article-entry .video-container iframe, .article-entry .video-container object, .article-entry .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: 0
+}
+.article-entry pre, .article-entry .highlight {
+	background: #272822;
+	margin: 0 -20px;
+	padding: 15px 20px;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px 0;
+	overflow: auto;
+	color: #f8f8f2;
+	line-height: 22.400000000000002px
+}
+.article-entry .highlight .gutter pre, .article-entry .gist .gist-file .gist-data .line-numbers {
+	color: #666;
+	font-size: 0.85em
+}
+.article-entry pre, .article-entry code {
+	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
+}
+.article-entry code {
+	background: #f0f0f0;
+	text-shadow: 0 1px #fff;
+	font-size: 0.85em;
+	padding: 0 0.3em;
+	border: 1px solid #dcdcdc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px
+}
+.article-entry pre code {
+	background: none;
+	text-shadow: none;
+	padding: 0;
+	border: none
+}
+.article-entry .highlight pre {
+	border: none;
+	margin: 0;
+	padding: 0
+}
+.article-entry .highlight table {
+	margin: 0;
+	width: auto
+}
+.article-entry .highlight td {
+	border: none;
+	padding: 0
+}
+.article-entry .highlight figcaption {
+	zoom: 1;
+	font-size: 0.85em;
+	color: #75715e;
+	line-height: 1em;
+	margin-bottom: 1em
+}
+.article-entry .highlight figcaption:before, .article-entry .highlight figcaption:after {
+	content: "";
+	display: table
+}
+.article-entry .highlight figcaption:after {
+	clear: both
+}
+.article-entry .highlight figcaption a {
+	float: right
+}
+.article-entry .highlight .gutter pre {
+	text-align: right;
+	padding-right: 20px
+}
+.article-entry .highlight .line {
+	height: 22.400000000000002px
+}
+.article-entry .gist {
+	margin: 0 -20px;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px 0;
+	background: #272822;
+	padding: 15px 20px 15px 0
+}
+.article-entry .gist .gist-file {
+	border: none;
+	font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+	margin: 0
+}
+.article-entry .gist .gist-file .gist-data {
+	background: none;
+	border: none
+}
+.article-entry .gist .gist-file .gist-data .line-numbers {
+	background: none;
+	border: none;
+	padding: 0 20px 0 0
+}
+.article-entry .gist .gist-file .gist-data .line-data {
+	padding: 0 !important
+}
+.article-entry .gist .gist-file .highlight {
+	margin: 0;
+	padding: 0;
+	border: none
+}
+.article-entry .gist .gist-file .gist-meta {
+	background: #272822;
+	color: #75715e;
+	font: 0.85em "微软雅黑", "Microsoft Yahei", "Droid Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+	text-shadow: 0 0;
+	padding: 0;
+	margin-top: 1em;
+	margin-left: 20px
+}
+.article-entry .gist .gist-file .gist-meta a {
+	color: #e32d40;
+	font-weight: normal
+}
+.article-entry .gist .gist-file .gist-meta a:hover {
+	text-decoration: underline
+}
+pre .comment, pre .preprocessor {
+	color: #75715e
+}
+pre .tag {
+	color: #f8f8f2
+}
+pre .title, pre .variable, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+	color: #f92672
+}
+pre .number, pre .built_in, pre .literal, pre .constant {
+	color: #ae81ff
+}
+pre .params {
+	color: #fd971f
+}
+pre .class, pre .ruby .class .title, pre .css .rules .attribute, pre .attribute {
+	color: #a6e22e
+}
+pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+	color: #e6db74
+}
+pre .css .hexcolor {
+	color: #a1efe4
+}
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+	color: #66d9ef
+}
+pre .keyword, pre .javascript .function {
+	color: #66d9ef
+}

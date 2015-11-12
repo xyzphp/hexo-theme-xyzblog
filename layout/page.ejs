@@ -1,0 +1,18 @@
+<%if(page.title=='about'){%>
+	<%- css('css/markdown.css')%>
+	<div class="container">
+	  <div class="row">
+	  <div class="col-lg-1"></div>
+	  <div class="col-lg-10">
+	  	 <h1><i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;&nbsp;<%- page.title%></h1><hr>
+		<div class="article-entry" style="border:none">
+			<%- page.content%>
+		</div>
+		<%- partial('_widget/duoshuo') %>
+	  </div>
+	  <div class="col-lg-1"></div>
+	  </div>
+	</div>
+<%}%>
+<%- partial('_widget/dm') %>
+

@@ -1,0 +1,40 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 text-center right-boder">
+				<p>- - - - - 我的订阅号 - - - - - </p>
+				<p><img src="<%= theme.weichat.qrcode %>" alt="" width="150"></p>
+	        </div>
+	        <div class="col-md-3 right-boder">
+	        	<p class="text-center">- - - - - - 我的联系方式 - - - - - </p>
+	        	<ul class="list-unstyled contact">
+	        		<li><lable class="label label-transparent"><i class="fa fa-map-marker"></i><%= theme.marker%></lable></li>
+	        		<li><lable class="label label-transparent"><i class="fa fa-qq"></i><%= theme.qq %></lable></li>
+	        		<li><lable class="label label-transparent"><i class="fa fa-envelope"></i><%= theme.email %></lable></li>
+	        		<li><a href="<%= theme.github.url %>" class="label label-transparent"><i class="fa fa-github"></i><%= theme.github.name %></a></li>
+	        		<li><a href="<%= theme.weibo.url %>" class="label label-transparent"><i class="fa fa-weibo"></i><%= theme.weibo.name %></a></li>
+	        	</ul>
+	        </div>
+			<div class="col-md-3">
+				<p class="text-center">- - - - - - - - 友情链接 - - - - - - </p>
+				<div class="friend-link">
+					<% 
+					var count=0;
+					for (var i in theme.Links){ %>
+						<a href="<%- theme.Links[i] %>" class="label label-<%- theme.colour[count % 10] %>"><%= i %></a>
+			        <% 
+			        count ++ 
+			    	} %>
+					
+				</div>
+	        </div>
+	        <div class="col-md-3 text-center">
+				<p>- - - - - 我的微信号 - - - - - </p>
+				<p><img src="<%= theme.weixin.qrcode %>" alt="" width="150"></p>
+	        </div>
+		</div>
+			<div class="col-md-12 text-center" style="border-top:1px dashed #ccc;line-height:30px">
+            <a href="<%- theme.copy.url %>" class="label label-link"><%= theme.copy.content %></a>
+			</div>
+	</div>
+</footer>
